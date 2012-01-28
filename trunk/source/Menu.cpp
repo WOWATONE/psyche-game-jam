@@ -1,5 +1,5 @@
-#include "../header/Global.h"
-#include "../header/Menu.h"
+#include "Global.h"
+#include "Menu.h"
 
 
 extern SDL_Surface *Srf_Screen;

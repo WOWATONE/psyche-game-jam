@@ -1,6 +1,6 @@
-#include "../header/Global.h"
-#include "../header/Game.h"
-#include "../header/Timer.h"
+#include "Global.h"
+#include "Game.h"
+#include "Timer.h"
 
 
 extern SDL_Event event;
@@ -14,6 +14,7 @@ extern Stage stage;
 extern SDL_Surface *Srf_tilesheet;
 extern char stageTitle[50];
 extern Layer bg1, bg2, bgtotal, oldbg;
+
 extern Layer fg1, fg2, fgtotal, oldfg;
 
 extern SDL_Rect camera;

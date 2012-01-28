@@ -9,9 +9,9 @@
 *	Last modified in July/2010
 */
 
-#include "../header/Global.h"
-#include "../header/Core.h"
-#include "../header/Timer.h"
+#include "Global.h"
+#include "Core.h"
+#include "Timer.h"
 
 
 /*Surface to render the window and screen*/

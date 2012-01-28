@@ -1,6 +1,6 @@
-#include "../header/Global.h"
-#include "../header/Game.h"
-#include "../header/Timer.h"
+#include "Global.h"
+#include "Game.h"
+#include "Timer.h"
 
 
 extern Timer fps;

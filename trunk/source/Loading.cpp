@@ -1,5 +1,5 @@
-#include "../header/Global.h"
-#include "../header/Loading.h"
+#include "Global.h"
+#include "Loading.h"
 
 
 extern SDL_Surface *Srf_Screen;
@@ -16,7 +16,7 @@ void LoadingScreen(void)
     int i = 0;
 
     Srf_loadingBackground = LoadImage("Assets/Background/treasure-screen.png");
-    
+
     loadingText.Srf_image = LoadImage("Assets/loading-text.png");
 	loadingText.x = 340;
 	loadingText.y = 480;

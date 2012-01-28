@@ -1,5 +1,5 @@
-#include "../header/Global.h"
-#include "../header/Timer.h"
+#include "Global.h"
+#include "Timer.h"
 
 
 /*Initialize the variables to start counting the time*/

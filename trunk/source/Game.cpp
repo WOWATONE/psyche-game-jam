@@ -1,5 +1,5 @@
-#include "../header/Global.h"
-#include "../header/Game.h"
+#include "Global.h"
+#include "Game.h"
 
 
 extern SDL_Surface *Srf_Screen;
@@ -109,7 +109,7 @@ void GameStart()
 	/*Set the animations*/
 
 
-	
+
 	/*COLLISION*/
 	playerRect.x = player.x;
 	playerRect.y = player.y;
