@@ -6,6 +6,8 @@ public class Button : MonoBehaviour
 {
 	public GameObject target;
 	public bool hold;
+	public int target_id;
+	//public Layer1 Layer;
 	
 	// Use this for initialization
 	void Start () 
@@ -21,34 +23,16 @@ public class Button : MonoBehaviour
 	
 	void OnTriggerEnter(Collider other)
 	{
-		if(other.gameObject.CompareTag("Player"))
-		{
-			if(target.CompareTag("Door"))
-			{
-				target.SendMessage("Open");
-			}
-			else if(target.CompareTag("Wall"))
-			{
-				target.SendMessage("GoDown");
-			}
-		}
+		if((target != null)&&(target.tag=="Block"))
+			target.SendMessage("ToFront",target_id);
 	}
 	
 	void OnTriggerExit(Collider other)
 	{
 		if(hold)
 		{
-			if(other.gameObject.CompareTag("Player"))
-			{
-				if(target.CompareTag("Door"))
-				{
-					target.SendMessage("Open");
-				}
-				else if(target.CompareTag("Wall"))
-				{
-					target.SendMessage("GoUp");
-				}
-			}
+			if((target != null)&&(target.tag=="Block"))
+				target.SendMessage("ToBack",target_id);
 		}
 	}
 }
