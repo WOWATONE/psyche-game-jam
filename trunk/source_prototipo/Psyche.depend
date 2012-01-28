@@ -448,3 +448,124 @@
 	"begin_code.h"
 	"close_code.h"
 
+1327711956 source:c:\users\icaramello\desktop\psyche\svn\source_prototipo2\core.cpp
+	"Global.h"
+	"Core.h"
+	"Timer.h"
+
+1327711401 c:\users\icaramello\desktop\psyche\svn\source_prototipo2\global.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"SDL.h"
+	"SDL_image.h"
+	"SDL_ttf.h"
+	"SDL_mixer.h"
+
+1327711401 c:\users\icaramello\desktop\psyche\svn\source_prototipo2\core.h
+
+1327711401 c:\users\icaramello\desktop\psyche\svn\source_prototipo2\timer.h
+
+1327711966 source:c:\users\icaramello\desktop\psyche\svn\source_prototipo2\game.cpp
+	"Global.h"
+	"Game.h"
+
+1327711401 c:\users\icaramello\desktop\psyche\svn\source_prototipo2\game.h
+	"SDL.h"
+	"SDL_image.h"
+	"SDL_ttf.h"
+	"SDL_mixer.h"
+	"Global.h"
+
+1327711975 source:c:\users\icaramello\desktop\psyche\svn\source_prototipo2\graphics.cpp
+	"Global.h"
+	"Game.h"
+	"Timer.h"
+
+1327712512 source:c:\users\icaramello\desktop\psyche\svn\source_prototipo2\input.cpp
+	"Global.h"
+	"Game.h"
+	"Timer.h"
+
+1327711994 source:c:\users\icaramello\desktop\psyche\svn\source_prototipo2\loading.cpp
+	"Global.h"
+	"Loading.h"
+
+1327711401 c:\users\icaramello\desktop\psyche\svn\source_prototipo2\loading.h
+
+1327712001 source:c:\users\icaramello\desktop\psyche\svn\source_prototipo2\logic.cpp
+	"Global.h"
+	"Game.h"
+	"Timer.h"
+
+1327712008 source:c:\users\icaramello\desktop\psyche\svn\source_prototipo2\menu.cpp
+	"Global.h"
+	"Menu.h"
+
+1327711401 c:\users\icaramello\desktop\psyche\svn\source_prototipo2\menu.h
+
+1327712014 source:c:\users\icaramello\desktop\psyche\svn\source_prototipo2\timer.cpp
+	"Global.h"
+	"Timer.h"
+
+1327712031 source:c:\users\icaramello\desktop\psyche\svn\source_prototipo2\main.cpp
+	<cstdlib>
+	<stdlib.h>
+	<SDL/SDL.h>
+	<SDL.h>
+
+1327711956 source:c:\users\icaramello\desktop\psyche\svn\source_prototipo\core.cpp
+	"Global.h"
+	"Core.h"
+	"Timer.h"
+
+1327711401 c:\users\icaramello\desktop\psyche\svn\source_prototipo\global.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"SDL.h"
+	"SDL_image.h"
+	"SDL_ttf.h"
+	"SDL_mixer.h"
+
+1327711401 c:\users\icaramello\desktop\psyche\svn\source_prototipo\core.h
+
+1327711401 c:\users\icaramello\desktop\psyche\svn\source_prototipo\timer.h
+
+1327711966 source:c:\users\icaramello\desktop\psyche\svn\source_prototipo\game.cpp
+	"Global.h"
+	"Game.h"
+
+1327711401 c:\users\icaramello\desktop\psyche\svn\source_prototipo\game.h
+	"SDL.h"
+	"SDL_image.h"
+	"SDL_ttf.h"
+	"SDL_mixer.h"
+	"Global.h"
+
+1327711975 source:c:\users\icaramello\desktop\psyche\svn\source_prototipo\graphics.cpp
+	"Global.h"
+	"Game.h"
+	"Timer.h"
+
+1327712512 source:c:\users\icaramello\desktop\psyche\svn\source_prototipo\input.cpp
+	"Global.h"
+	"Game.h"
+	"Timer.h"
+
+1327711994 source:c:\users\icaramello\desktop\psyche\svn\source_prototipo\loading.cpp
+	"Global.h"
+	"Loading.h"
+
+1327711401 c:\users\icaramello\desktop\psyche\svn\source_prototipo\loading.h
+
+1327712014 source:c:\users\icaramello\desktop\psyche\svn\source_prototipo\timer.cpp
+	"Global.h"
+	"Timer.h"
+
+1327712031 source:c:\users\icaramello\desktop\psyche\svn\source_prototipo\main.cpp
+	<cstdlib>
+	<stdlib.h>
+	<SDL/SDL.h>
+	<SDL.h>
+
