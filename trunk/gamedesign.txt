@@ -1,0 +1,8 @@
+Puzzle 2d lateral (Salas)
+-Elementos de Puzzle: 
+Mudança de Layer (Central), Botões, Escada, Ponte, Portas
+
+Ambiente: vago, filosófico, minimalista. Cores escuras. A nitidez e complexidade aumenta a cada fase.
+
+Plot: personagem persegue algo que 'foge' dele, mas que ainda assim o ajuda. Com o progresso, o ambiente fica mais nitido bem como o "perseguido", que cada vez se torna mais semelhante a ele. No fim, o que ele persegue é ele mesmo.
+
