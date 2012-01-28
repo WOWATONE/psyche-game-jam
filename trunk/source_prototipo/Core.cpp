@@ -64,7 +64,7 @@ void CoreClose(void)
 	TTF_CloseFont(pauseFont); */
 
 	/*Quit SDL*/
-	Mix_CloseAudio();
+	//Mix_CloseAudio();
 	TTF_Quit();
 	SDL_Quit();
 }
@@ -85,13 +85,6 @@ int main(int argc, char *argv[])
 	if(TTF_Init() < 0)
 	{
 		fprintf(error, "\nFailed trying to load SDL_ttf library\n");
-		return -1;
-	}
-
-	//Initialize SDL_mixer
-	if( Mix_OpenAudio(22050, MIX_DEFAULT_FORMAT, 2, 4096) < 0 )
-	{
-		fprintf(error, "\nFailed trying to load SDL_Mixer library\n");
 		return -1;
 	}
 

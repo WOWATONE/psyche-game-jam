@@ -20,7 +20,7 @@ SDL_Surface *Srf_foreground = NULL;
 SDL_Surface *Srf_character = NULL;
 
 /*Sound effects*/
-Mix_Chunk *pauseSound = NULL;
+//Mix_Chunk *pauseSound = NULL;
 
 /*The map matrix*/
 Map **MapMatrix;
@@ -79,7 +79,7 @@ void GameStart()
 	stdfont_italic = TTF_OpenFont("font/calibrii.ttf", 30);
 
 	/*Load the sound effects*/
-	pauseSound = Mix_LoadWAV("sound/pause.wav");
+	//pauseSound = Mix_LoadWAV("sound/pause.wav");
 
 	/*Prepare the clipper to the tilesize and sheetsize we are going to use*/
 	ClipTiles(24);

@@ -9,7 +9,7 @@ extern MainState NextState;
 
 extern Timer fps;
 
-extern Mix_Chunk *pauseSound;
+//extern Mix_Chunk *pauseSound;
 extern Stage stage;
 extern SDL_Surface *Srf_tilesheet;
 extern char stageTitle[50];
@@ -45,7 +45,7 @@ void GameInput(void)
 				fps = pause(fps);
 
 				/*Play the sound*/
-				Mix_PlayChannel(-1, pauseSound, 0);
+				//Mix_PlayChannel(-1, pauseSound, 0);
 			}
 
 			/* Load Map file */

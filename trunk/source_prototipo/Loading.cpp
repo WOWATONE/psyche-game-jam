@@ -27,13 +27,6 @@ void LoadingScreen(void)
 	loadingText.end = -1;
     SetAnimation(&loadingText, 1, 10, 98, 35);
 
-	for(i = 0; i < 6000; i++)
-	{
-		DrawImage(0, 0, Srf_loadingBackground, Srf_Screen, NULL);
-		DrawAnimation(loadingText.x, loadingText.y, &loadingText); /*FrameCut = depends on how many loops it is going to make*/
-		SDL_Flip(Srf_Screen);
-	}
-
     /*After animating goes to the next state*/
 	CurrentState = NextState;
 	free(loadingText.frame);
