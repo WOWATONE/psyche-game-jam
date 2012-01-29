@@ -6,17 +6,25 @@ public class EndDoor : MonoBehaviour
 {
 	public string nextLevel;
 	public GameObject textBox;
+	public bool transition;
+	public int counter;
 	
 	// Use this for initialization
 	void Start() 
 	{
-		
+		transition = false;
+		counter = 0;
 	}
 	
 	// Update is called once per frame
 	void Update() 
-	{
-		
+	{	
+		if(transition == true)
+		{
+			counter++;
+			if(counter == 400)
+				Application.LoadLevel(nextLevel);
+		}
 	}
 	
 	void OnTriggerEnter(Collider other)
@@ -25,14 +33,15 @@ public class EndDoor : MonoBehaviour
 		{
 			/*Bring TextBox to front*/
 			textBox.transform.Translate(0, 0, -33);
-			other.gameObject.transform.Translate(20, 0, 25);
+			/*Lock and Hide the Player*/
+			Destroy(other.gameObject);
+			transition = true;
 		}
 	}
 	
-	void OnTriggerExit(Collider other)
+	/*void OnTriggerExit(Collider other)
 	{
 		/*Wait until change of map*/
-		Thread.Sleep(3000);	
-		Application.LoadLevel(nextLevel);
-	}
+		
+	//}
 }
