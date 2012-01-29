@@ -3,11 +3,12 @@ using System.Collections;
 
 public class LockDoor : MonoBehaviour 
 {
-
+	public Player player;
+	
 	// Use this for initialization
 	void Start () 
 	{
-	
+		
 	}
 	
 	// Update is called once per frame
@@ -16,13 +17,21 @@ public class LockDoor : MonoBehaviour
 	
 	}
 	
-	void OnTriggerEnter(Collision other)
+	void OnTriggerEnter(Collider other)
 	{
-		if(other.gameObject.CompareTag("Key"))
+		print("Bati na Porta");
+		
+		if(other.gameObject.CompareTag("Player"))
 		{
-			//other.gameObject.transform.Translate(0, 0, -30);
-			Destroy(gameObject);
-			Destroy(other.gameObject);
+			if(player.countKeys > 0)
+			{
+				gameObject.transform.Translate(0, 0, -25);
+				Destroy(player.key.gameObject);
+				player.countKeys--;
+			}
+			
+			print("Entrei na Porta");
 		}
 	}
+	
 }

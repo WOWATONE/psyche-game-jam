@@ -16,11 +16,18 @@ public class Key : MonoBehaviour
 	
 	}
 	
-	void OnTriggerEnter(Collision other)
+	void OnTriggerEnter(Collider other)
 	{
+		print("Passei pela chave");
+		
 		if(other.gameObject.CompareTag("Player"))
 		{
-			gameObject.transform.parent = other.gameObject.transform;
+			float x = -20 - gameObject.transform.position.x;
+			float y = 80 - gameObject.transform.position.y;
+			
+			gameObject.transform.Translate(x, y, 0);
+			
+			other.gameObject.SendMessage("GrabKey", this);
 		}
 	}
 }
