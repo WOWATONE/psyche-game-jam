@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using System.Threading;
 
 public class EndDoor : MonoBehaviour 
 {
@@ -18,17 +19,20 @@ public class EndDoor : MonoBehaviour
 		
 	}
 	
-	void OnTriggerEnter(Collision other)
+	void OnTriggerEnter(Collider other)
 	{
 		if(other.gameObject.CompareTag("Player"))
 		{
 			/*Bring TextBox to front*/
-			textBox.transform.translate(0, 0, 33);
-			
-			
-			/*Wait until change of map*/
-			Thread.Sleep(3000);	
-			Application.LoadLevel(nextLevel);
+			textBox.transform.Translate(0, 0, -33);
+			other.gameObject.transform.Translate(20, 0, 25);
 		}
+	}
+	
+	void OnTriggerExit(Collider other)
+	{
+		/*Wait until change of map*/
+		Thread.Sleep(3000);	
+		Application.LoadLevel(nextLevel);
 	}
 }
