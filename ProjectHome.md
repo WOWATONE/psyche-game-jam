@@ -1,0 +1,1 @@
+Global Game Jam 2012 USP-São Carlos (Brazil)
